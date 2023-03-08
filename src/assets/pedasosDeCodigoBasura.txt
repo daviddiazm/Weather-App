@@ -1,0 +1,23 @@
+  // const [localitation, setlocalitation] = useState();
+
+  // navigator.geolocation.getCurrentPosition((pos) => {
+  //   let latitude = pos.coords.latitude
+  //   let longitude = pos.coords.longitude
+  //   let latitudeLongitudeong = {}
+  //   latitudeLongitudeong.latitude = latitude;
+  //   latitudeLongitudeong.longitude = longitude;
+  //   setlocalitation(latitudeLongitudeong)
+  // })
+
+
+
+
+  // await fetch(urlApi)
+    //   .then(res => { return res.json() })
+    //   .then(data => console.log(data))
+    //   .catch(err => console.log(err))
+
+
+
+
+    
