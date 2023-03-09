@@ -1,0 +1,8 @@
+:root {
+    --azul: #026EED;
+}
+
+.App {
+
+    background: radial-gradient(50% 50% at 50% 50%, #D5F3FF 0%, #51B4E8 100%);
+}
