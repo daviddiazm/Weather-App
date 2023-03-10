@@ -68,7 +68,8 @@ console.log(iconWeather(weather.weather[0].main));
 
   return (
     <div className='infoStyleCard'>
-      <img src={iconWeather(weather.weather[0].main)} alt="" className='icon' />
+      {/* <img src={iconWeather(weather.weather[0].main)} alt="" className='icon' /> */}
+      <img src="/public/img/clearSky.svg" alt="" className='icon' />
       {getCelcius()}
       <p>Viento {weather.wind.speed}</p>
       <p>Nubes {weather.clouds.all}</p>
