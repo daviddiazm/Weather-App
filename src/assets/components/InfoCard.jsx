@@ -36,27 +36,27 @@ const InfoCard = ({ weather }) => {
         break;
 
       case 'Atmosphere':
-        urlICon = "/public/img/brokenClouds.svg"
+        urlICon = "/img/brokenClouds.svg"
         break;
 
       case "Clouds":
-        urlICon = "/public/img/scatteredClouds.svg"
+        urlICon = "/img/scatteredClouds.svg"
         break;
 
       case 'Fog':
-        urlICon = "/public/img/mist.svg"
+        urlICon = "/img/mist.svg"
         break;
 
       case 'Haze':
-        urlICon = "/public/img/mist.svg"
+        urlICon = "/img/mist.svg"
         break;
 
       case 'Smoke':
-        urlICon = "/public/img/mist.svg"
+        urlICon = "/img/mist.svg"
         break;
 
       default:
-        urlICon = "/public/img/clearSky.svg"
+        urlICon = "/img/clearSky.svg"
         break;
     }
     return urlICon
@@ -68,8 +68,8 @@ console.log(iconWeather(weather.weather[0].main));
 
   return (
     <div className='infoStyleCard'>
-      {/* <img src={iconWeather(weather.weather[0].main)} alt="" className='icon' /> */}
-      <img src="/public/img/clearSky.svg" alt="" className='icon' />
+      <img src={iconWeather(weather.weather[0].main)} alt="" className='icon' />
+      {/* <img src="/public/img/clearSky.svg" alt="" className='icon' /> */}
       {getCelcius()}
       <p>Viento {weather.wind.speed}</p>
       <p>Nubes {weather.clouds.all}</p>
