@@ -20,19 +20,19 @@ const InfoCard = ({ weather }) => {
     switch (weatherStatus) {
 
       case 'Thunderstorm':
-        urlICon = "/public/img/Thunderstorm.svg"
+        urlICon = "/img/Thunderstorm.svg"
         break;
 
       case 'Drizzle':
-        urlICon = "/public/img/showerRain.svg"
+        urlICon = "/img/showerRain.svg"
         break;
 
       case 'Rain':
-        urlICon = "/public/img/Rain.svg"
+        urlICon = "/img/Rain.svg"
         break;
 
       case 'Snow':
-        urlICon = "/public/img/Snow.svg"
+        urlICon = "/img/Snow.svg"
         break;
 
       case 'Atmosphere':
