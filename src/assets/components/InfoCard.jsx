@@ -20,43 +20,43 @@ const InfoCard = ({ weather }) => {
     switch (weatherStatus) {
 
       case 'Thunderstorm':
-        urlICon = "src\assets\img\Thunderstorm.svg"
+        urlICon = "/public/img/Thunderstorm.svg"
         break;
 
       case 'Drizzle':
-        urlICon = "src\assets\img\showerRain.svg"
+        urlICon = "/public/img/showerRain.svg"
         break;
 
       case 'Rain':
-        urlICon = "src\assets\img\Rain.svg"
+        urlICon = "/public/img/Rain.svg"
         break;
 
       case 'Snow':
-        urlICon = "src\assets\img\Snow.svg"
+        urlICon = "/public/img/Snow.svg"
         break;
 
       case 'Atmosphere':
-        urlICon = "src\assets\img\brokenClouds.svg"
+        urlICon = "/public/img/brokenClouds.svg"
         break;
 
       case "Clouds":
-        urlICon = "src\assets\img\scatteredClouds.svg"
+        urlICon = "/public/img/scatteredClouds.svg"
         break;
 
       case 'Fog':
-        urlICon = "src\assets\img\mist.svg"
+        urlICon = "/public/img/mist.svg"
         break;
 
       case 'Haze':
-        urlICon = "src\assets\img\mist.svg"
+        urlICon = "/public/img/mist.svg"
         break;
 
       case 'Smoke':
-        urlICon = "src\assets\img\mist.svg"
+        urlICon = "/public/img/mist.svg"
         break;
 
       default:
-        urlICon = "src\assets\img\clearSky.svg"
+        urlICon = "/public/img/clearSky.svg"
         break;
     }
     return urlICon
@@ -75,7 +75,7 @@ console.log(iconWeather(weather.weather[0].main));
       <p>Presion {weather.main.pressure}</p>
       <p className='localitation'>{weather.name} {weather.sys.country}</p>
 
-      <button className='text-cyan-800' onClick={() => (setToCelcius(!toCelcius))}>Cambiar °F / °C</button>
+      <button onClick={() => (setToCelcius(!toCelcius))}>°F / °C</button>
     </div>
   )
 }

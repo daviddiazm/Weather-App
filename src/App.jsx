@@ -33,8 +33,8 @@ const App = () => {
 
 
   return (
-    <div className=" App h-full flex flex-col justify-center items-center p-10 text-cyan-200">
-      <h1>Weather App</h1>
+    <div className=" App h-full flex flex-col justify-center items-center text-cyan-200">
+      {/* <h1>Weather App</h1> */}
       {!weather ?
         <Loader />
         : <InfoCard weather={weather}/>}
