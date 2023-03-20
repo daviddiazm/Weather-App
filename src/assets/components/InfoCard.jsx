@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./InfoCard.css"
 
 const InfoCard = ({ weather }) => {
-  const [toCelcius, setToCelcius] = useState(false);
+  const [toCelcius, setToCelcius] = useState(true);
 
   const getCelcius = () => {
     if (toCelcius) {
